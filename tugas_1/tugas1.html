@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS GRIDS</title>
+        <style>
+            .wrapper{
+                display:grid;
+                grid-template-columns: 70% 30%;
+                /*
+                grid-column-gap:1em;
+                grid-row-gap:1em;
+                */
+                grid-gap:1em;
+            }
+
+            .wrapper > div {
+                background:rgb(173, 173, 173);
+                padding:1em;
+            }
+            .wrapper > div:nth-child(odd){
+                background:rgb(97, 97, 97);
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quam modi sunt sequi soluta, aliquam voluptatum ut magni beatae iste dolorum distinctio alias neque inventore expedita mollitia rem fugit. Iusto, pariatur adipisci voluptas sed magni non esse facilis obcaecati in doloribus voluptatibus dignissimos soluta tempora provident quaerat, optio ipsam. Expedita, rem. Nobis repellendus illum fugit sequi quasi. Tempora reprehenderit in ipsum, illo quibusdam doloremque eligendi consequuntur atque, nihil porro dolorum molestiae itaque numquam quisquam aliquam.
+            </div>
+            <div>
+               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis quis ipsam veritatis sit voluptates, provident veniam nobis cum iure asperiores praesentium sequi nisi eius dolores totam ab sapiente debitis? Iure nostrum quam eligendi laboriosam harum aut neque, fugit fuga tempora hic maxime accusamus vitae sunt nulla facilis asperiores provident soluta.
+            </div>
+
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quam modi sunt sequi soluta, aliquam voluptatum ut magni beatae iste dolorum distinctio alias neque inventore expedita mollitia rem fugit. Iusto, pariatur adipisci voluptas sed magni non esse facilis obcaecati in doloribus voluptatibus dignissimos soluta tempora provident quaerat, optio ipsam. Expedita, rem. Nobis repellendus illum fugit sequi quasi. Tempora reprehenderit in ipsum, illo quibusdam doloremque eligendi consequuntur atque, nihil porro dolorum molestiae itaque numquam quisquam aliquam.
+            </div>
+            <div>
+               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis quis ipsam veritatis sit voluptates, provident veniam nobis cum iure asperiores praesentium sequi nisi eius dolores totam ab sapiente debitis? Iure nostrum quam eligendi laboriosam harum aut neque, fugit fuga tempora hic maxime accusamus vitae sunt nulla facilis asperiores provident soluta.
+            </div>
+        </div>
+    </body>
+</html>
