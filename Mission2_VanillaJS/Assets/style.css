@@ -1,4 +1,290 @@
-#train {
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Just+Another+Hand&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 300vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+
+.font1 {
+  font-family: 'Caveat', cursive;
+  font-size: 80px;
+  color: aliceblue;
+  padding-left: 90px;
+}
+
+.font2 {
+  font-family: 'Caveat', cursive;
+  font-size: 45px;
+  color: aliceblue;
+  padding-left: 65px;
+}
+
+.font3 {
+  font-family: 'Just Another Hand', cursive;
+  font-size: 28px;
+  color: aliceblue;
+  padding-left: 65px;
+}
+
+.s2 {
+  max-width: 71%;
+  text-align: center;
+  margin-left: 11%;
+}
+
+.desc {
+  margin-top: 2%;
+}
+
+.header_third {
+  padding: 0 0 0 34%;
+}
+
+.text_slidedua {
+  margin-top: 2%;
+}
+
+button {
+  width: 180px;
+  color: rgb(11, 0, 65);
+  font-size: 17px;
+  padding: 12px 0;
+  background: aliceblue;
+  border: none;
+  border-radius: 30px;
+  margin-top: 1rem;
+  animation: button 7s ease-out infinite normal;
+  cursor: pointer;
+}
+
+@keyframes button {
+  0% {
+    transform: scale(0.9);
+  }
+
+  10% {
+    transform: scale(1);
+  }
+
+  20% {
+    transform: scale(0.9);
+  }
+
+  30% {
+    transform: scale(1);
+  }
+
+  40% {
+    transform: scale(0.9);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  60% {
+    transform: scale(0.9);
+  }
+
+  70% {
+    transform: scale(1);
+  }
+
+  80% {
+    transform: scale(0.9);
+  }
+
+  90% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+/* Slide Satu */
+.satu {
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(to right, #00014a, #281f6f);
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-position: right;
+  background-size: cover;
+}
+
+.layer:nth-child(1) {
+  background-image: url(1.png);
+}
+
+.layer:nth-child(2) {
+  background-image: url(2.png);
+}
+
+.layer:nth-child(3) {
+  background-image: url(3.png);
+}
+
+.layer:nth-child(4) {
+  background-image: url(4.png);
+}
+
+.layer:nth-child(5) {
+  background-image: url(5.png);
+}
+
+.layer:nth-child(6) {
+  background-image: url(6.png);
+}
+
+.layer:nth-child(7) {
+  background-image: url(7.png);
+}
+
+.row {
+  display: flex;
+  height: 90%;
+  align-items: center;
+}
+
+.col {
+  flex-basis: 50%;
+}
+
+/* Slide Dua */
+.dua {
+  position: relative;
+  background-image: linear-gradient(to right, #281f6f, #00014a);
+}
+
+.layer2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-position: left;
+  background-size: cover;
+}
+
+.layer2:nth-child(1) {
+  background-image: url(1flip.png);
+}
+
+.image1 {
+  weight: 15rem;
+  height: 15rem;
+  display: flex;
+  float: left;
+  margin-top: 8rem;
+  margin-left: -50px;
+
+}
+
+#roket {
   position: relative;
   cursor: pointer;
+}
+
+/* Sldde Tiga*/
+/* .tiga {
+  background: #a3f3d3;
+  position: relative;
+} */
+
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#preloader {
+  background: #000738 url(loading.gif) no-repeat center center;
+  background-size: 10%;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 100;
+}
+
+/* slide tiga */
+.hero {
+  background-image: linear-gradient(to right, #00014a, #281f6f);
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.hero__content {
+  position: relative;
+  align-self: center;
+  padding: 3rem 0;
+}
+
+.snow {
+  position: absolute;
+  min-width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.snow .svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#snow-top-layer {
+  will-change: transform;
+  transform: translateY(-768px);
+  animation: fall 22.5s infinite linear;
+}
+
+#snow-bottom-layer {
+  will-change: transform;
+  transform: translateY(-768px);
+  animation: fall 45s infinite linear;
+}
+
+@keyframes fall {
+  100% {
+    transform: translateY(0);
+  }
 }
